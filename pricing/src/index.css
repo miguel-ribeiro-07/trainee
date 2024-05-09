@@ -1,0 +1,71 @@
+*,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --employ-green:#1EA358;
+  --backgroud-soft-gray:#dee2e6;
+  --black:#0d1b2a;
+  --white:#ffffff;
+}
+/*All page*/
+.PricingPage{
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  place-items: center;
+  background-color: var(--backgroud-soft-gray);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 375px 658px;
+  z-index: 999;
+}
+
+/*Persuasive Text Styles*/
+.PersText{
+  text-align: center;
+}
+.PersText .header-topic{
+  color: var(--black);
+}
+.PersText .header-subtext{
+  color: var(--employ-green);
+}
+
+/*Prices cards styles*/
+
+.pricing-cards{
+  margin-top: 1em;
+  display: flex;
+  min-height: 30rem;
+  justify-content: center;
+}
+
+.PricingCard{
+  padding: 2em;
+  margin: 2em;
+  border-radius: 1em;
+  text-align: center;
+  background-color: var(--white);
+  width: min(100%, 30rem);
+}
+
+.PricingCard:nth-child(2) {
+  background-color: var(--employ-green);
+  color: var(--white);
+}
+
+.PricingCard:nth-child(4) {
+  background-color: var(--employ-green);
+  color: var(--white);
+}
+
+.PricingCard .card-body > * {
+  padding-block: 1em;
+  border-top: 1px solid var(--black);
+}
